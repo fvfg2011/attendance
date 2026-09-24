@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>Облік відвідуваності</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Облік відвідуваності класу</h1>
+  <div class="date-nav">
+    <button id="prevDay">← Попередній день</button>
+    <span id="currentDate"></span>
+    <button id="nextDay">Наступний день →</button>
+  </div>
+  <div id="tableBody" class="students-list">
+  </div>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3 id="modalName"></h3>
+      <ul id="modalLessons"></ul>
+    </div>
+  </div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

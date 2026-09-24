@@ -1,0 +1,122 @@
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 15px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #333;
+}
+
+.date-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.date-nav button {
+  background: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #764ba2;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.date-nav span {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.students-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+.absent-mark {
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.full-day {
+  background: #e74c3c;
+}
+
+.partial-day {
+  background: #95a5a6;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px 30px;
+  border-radius: 16px;
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#modalName {
+  color: #764ba2;
+  margin-top: 0;
+}
+
+#modalLessons li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#modalLessons li:last-child {
+  border-bottom: none;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
