@@ -79,11 +79,15 @@ function openModal(name, lessonNumbers) {
 renderTable();
 
 document.getElementById("nextDay").addEventListener("click", () => {
-  currentDate.setDate(currentDate.getDate() + 1);
+  do {
+    currentDate.setDate(currentDate.getDate() + 1);
+  } while (currentDate.getDay() === 0 || currentDate.getDay() === 6);
   renderTable();
 });
 document.getElementById("prevDay").addEventListener("click", () => {
-  currentDate.setDate(currentDate.getDate() - 1);
+  do {
+    currentDate.setDate(currentDate.getDate() - 1);
+  } while (currentDate.getDay() === 0 || currentDate.getDay() === 6);
   renderTable();
 });
 
